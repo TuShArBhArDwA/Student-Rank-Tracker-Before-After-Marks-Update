@@ -9,9 +9,9 @@ Features:-
 
 Getting Started:-
 To get started with the Student Rank Tracker, follow these steps:
-1.) Clone the repository.
-2.) Install the required dependencies: pip install -r requirements.txt
-3.) Run the main Python script: python main.py
+1.) Clone the repository.                                                
+2.) Install the required dependencies: pip install -r requirements.txt                                             
+3.) Run the main Python script: python main.py                                     
 4.) Follow the prompts to input student marks and observe rank changes.
 For more detailed instructions, refer to the User Guide included in the repository.
 
