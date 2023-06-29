@@ -1,57 +1,23 @@
-# Python
-"""To find the rank, Jump of rank and Final Marks of the students before and after the updating marks."""
-def highrank(names,marks,updates):
-    Rank1=[]
-    Rank2=[]
-    d=len(names)
-    list2=sorted(marks)
-    list3=list2[::-1]
-    print("Before Updates, Ranks are:-")
-    for i in range(0,d):
-        for j in range(0,d):
-            if list3[i]==marks[j]:
-                print("Rank:",(i+1),"---->",names[j])
-            if marks[i]==list3[j]:
-                Rank1.append(j+1)
-    newlist=[]
-    for i in range(0,d):
-        newlist.append(marks[i]+updates[i])
-    list1=sorted(newlist)
-    list5=list1[::-1]
-    for i in range(0,d):
-        for j in range(0,d):
-            if newlist[i]==list5[j]:
-                Rank2.append(j+1)
-    print("After Updates")
-    print("Student with Highest marks is:")
-    for i in range(0,d):
-        if list5[0]==newlist[i]:
-            print("Rank:","1","---->",names[i],"[Final Marks:",list5[0],"]"," ","@","Jump of Rank",Rank1[i]-Rank2[i])
-    print("Additionaly Rank of other students:")
-    for p in range(1,d):
-        for q in range(0,d):
-            if list5[p]==newlist[q]:
-                print("Rank:",(p+1),"---->",names[q],"[Final Marks:",list5[p],"]"," ","@","Jump of Rank",Rank1[q]-Rank2[q])
+Student Rank Tracker:-
+The Student Rank Tracker is a Python-based project that allows you to track the rank of students before and after updating their marks. This tool provides valuable insights into student performance and helps analyze the impact of mark updates on their overall rankings.
 
-a=input("Please Enter the list of Student's Names")
-names=a.split(",")
+Features:-
+* Calculate initial rankings based on student marks.
+* Update marks and observe changes in student rankings.
+* Gain insights into student performance trends.
+* Facilitate informed decision-making and interventions.
 
-b=input("Please Enter the list of marks obtained by students")
-marks=b.split(",")
+Getting Started:-
+To get started with the Student Rank Tracker, follow these steps:
+1.) Clone the repository.
+2.) Install the required dependencies: pip install -r requirements.txt
+3.) Run the main Python script: python main.py
+4.) Follow the prompts to input student marks and observe rank changes.
+For more detailed instructions, refer to the User Guide included in the repository.
 
-c=input("Please Enter the list of Updation of numbers")
-updates=c.split(",")
+Documentation:-
+For a comprehensive understanding of the project, refer to the attached document. It includes a detailed overview, implementation details, usage instructions, code snippets, and examples.
 
-d=len(names)
-e=len(marks)
-f=len(updates)
-if d==e and d==f:
-    for i in range(0,e):
-      marks[i]=float(marks[i])
+Please review the document for a better understanding of the Student Rank Tracker project and to make the most of this powerful tool.
 
-    for i in range(0,f):
-      updates[i]=float(updates[i])
-
-    highrank(names,marks,updates)
-else:
-    print("Sorry, Lists are of different lengths")
+Note: The attached document provides valuable insights and guidance for the project. It is recommended to refer to it for a comprehensive understanding of the Student Rank Tracker.
