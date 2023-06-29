@@ -1,4 +1,5 @@
-Student Rank Tracker:-
+Student Rank Tracker:-                                                           
+![frontfp3](https://github.com/TuShArBhArDwA/Student-Rank-Tracker-Before-After-Marks-Update/assets/116137083/10a974e3-44df-4351-9040-fe7110812f8d)
 The Student Rank Tracker is a Python-based project that allows you to track the rank of students before and after updating their marks. This tool provides valuable insights into student performance and helps analyze the impact of mark updates on their overall rankings.
 
 Features:-
